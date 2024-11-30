@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Fairy Tales Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px);
+        }
+        .login-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #333;
+            width: 300px;
+        }
+        .login-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .login-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .login-form button:hover {
+            background-color: #302f2f;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Fairy Tales</a>
+                    <div class="dropdown-content">
+                        <a href="tales/tale1.html">Cinderella</a>
+                        <a href="tales/tale2.html">Snow White</a>
+                        <a href="tales/tale3.html">Little Red Riding Hood</a>
+                        <a href="tales/tale4.html">Beauty and the Beast</a>
+                        <a href="tales/tale5.html">The Little Mermaid</a>
+                        <a href="tales/tale6.html">Rapunzel</a>
+                        <a href="tales/tale7.html">Hansel and Gretel</a>
+                        <a href="tales/tale8.html">Sleeping Beauty</a>
+                        <a href="tales/tale9.html">Jack and the Beanstalk</a>
+                        <a href="tales/tale10.html">The Three Little Pigs</a>
+                        <a href="tales/tale11.html">The Ugly Duckling</a>
+                        <a href="tales/tale12.html">Jack and the Beanstalk</a>
+                    </div>
+                </li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="login-form">
+            <h1>Login to Your Account</h1>
+            <form action="submit-login.php" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
